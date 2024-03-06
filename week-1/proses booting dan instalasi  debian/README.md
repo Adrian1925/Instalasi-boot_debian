@@ -68,7 +68,7 @@ Kernel menginisialisasi komponen sistem yang diperlukan, seperti driver, manajem
 
 7. Inisialisasi Mode Pengguna:
 
-![alt text](7.png)
+![alt text](assets/img/proses-booting/7.png)
 
 Setelah kernel menyelesaikan inisialisasinya, kernel memulai inisialisasi mode pengguna. Pengaturan khusus pengguna, perintah login, dan aplikasi/layanan pengguna dimuat. Antarmuka pengguna grafis (GUI) atau antarmuka baris perintah (CLI) disajikan kepada pengguna, memungkinkan interaksi dengan sistem operasi.
 
