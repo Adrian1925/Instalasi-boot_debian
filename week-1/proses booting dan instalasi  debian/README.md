@@ -35,7 +35,7 @@ Proses booting adalah proses awal saat sebuah komputer atau perangkat sistem dim
 
 1. Power On: 
 Komputer dinyalakan atau direstart.
-
+![Power](assets/img/proses-booting/power.jpeg)
 2. POST (Power-On Self-Test): 
 
 ![App Screenshot](assets/img/proses-booting/1a.jpeg)
