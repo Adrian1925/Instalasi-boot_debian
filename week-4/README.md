@@ -356,11 +356,38 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
 
 ## LATIHAN:
 
-1. Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output   ke file baru.
+1. Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output ke file baru.
+
+   ***JAWAB***
+      ![App Screenshot](assets/img/latihan/1.png)
+   Membuat daftar isi direktori di awal dan menyimpan di file list_direktori.txt
+
 2. Lihat daftar secara lengkap pada direktori /etc/passwd, belokkan tampilan standard output ke file baru tanpa menghapus file baru sebelumnya.
+
+   ***Jawab***
+   ![App Screenshot](assets/img/latihan/2.png)
+Langkah ini akan menambahkan daftar isi direktori "/etc/passwd" ke dalam file "list_direktori.txt" tanpa menghapus isinya
+
 3. Urutkan file baru dengan cara membelokkan standard input.
+
+   ***Jawab***
+   ![App Screenshot](assets/img/latihan/3.png)
+Fungsi sort digunakan untuk mengurutkan daftar yang disimpan dalam file "list_direktori.txt" dan menampilkan hasilnya di terminal
+
 4. Urutkan file baru dengan cara membelokkan standard input dan standard output ke file baru.urut.
+
+   ***Jawab***
+   ![App Screenshot](assets/img/latihan/4.png)
+Langkah ini akan mengurutkan daftar yang disimpan dalam file "list_direktori.txt" dan menyimpan hasilnya ke dalam file baru bernama "urut".
+![App Screenshot](assets/img/latihan/output4.png)
+
 5. Buatlah direktori latihan 2 sebanyak 2 kali dan belokkan standard error ke file rmdirerror.txt.
+
+   ***Jawab***
+   ![App Screenshot](assets/img/latihan/5.png)
+Langkah ini akan mencobamembuat direktori "latihan2" sebanyak 2 kali. Jika direktori sudah ada, akan muncul pesan kesalahan yang akan dialihkan ke file "rmdierror.txt".
+![App Screenshot](assets/img/latihan/output5.png)
+
 6. Urutkan kalimat berikut :
    ```
    Jakarta
@@ -370,10 +397,19 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
    Palembang
    Lampung
    ```
-  Dengan menggunakan notasi **here document (<@@@ ...@@@)** . [HINT](https://www.geeksforgeeks.org/how-to-use-here-document-in-bash-programming/)
+   Dengan menggunakan notasi **here document (<@@@ ...@@@)** . [HINT](https://www.geeksforgeeks.org/how-to-use-here-document-in-bash-programming/)
   
+   ***Jawab***
+   ![App Screenshot](assets/img/latihan/6.png)
+Seperti soal yang sebelumnya fungsi sort berfungsi untuk mengurutkan kalimat menurut alfabet
 
 7. Hitung jumlah baris, kata dan karakter dari file baru.urut dengan menggunakan filter dan tambahkan data tersebut ke file baru.
+
+   ***Jawab***
+   ![App Screenshot](assets/img/latihan/7.png)
+Langkah ini akan menghitung jumlah baris, kata dan karakter dari file "baru.urut" dan menambahkan hasilnya ke dalam file "urut.txt"
+![App Screenshot](assets/img/latihan/output7.png)
+
 8. Gunakan perintah di bawah ini dan perhatikan hasilnya.
    ```
     $ cat > hello.txt
@@ -387,6 +423,26 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
     $ cat hello.txt | sort | uniq
     $ cat hello.txt | grep “dog” | grep –v “cat”
    ```
+   ***Jawab***
+   ![App Screenshot](assets/img/latihan/8.png)
+Langkah ini membuat file "hello.txt" dengan beberapa baris kata. Kemudian perintah "sort uniq" digunakan untuk mengurutkan dan menghapus kata yang sama. Kemudian untuk perintah grep "dog" | grep -v "cat" berfungsi untuk melakukan pencarian kata "dog" tanpa kata "cat".
+
+### KESIMPULAN
+Redirection (Pembelokan): Redirection adalah proses mengalihkan input dan output standar dari atau ke file, perangkat, atau proses lain. Dalam Linux, ini dapat dilakukan menggunakan operator ">" untuk output standar dan "<" untuk input standar. Operator ">>" digunakan untuk menambahkan output ke file tanpa menghapus isinya sebelumnya. Redirection juga dapat digunakan untuk mengalihkan output atau input standar dari atau ke file-file lainnya.
+
+Pipeline (Pipa): Pipeline adalah mekanisme di Linux yang memungkinkan output dari satu proses menjadi input dari proses berikutnya secara langsung. Ini dilakukan dengan menggunakan operator "|". Pipeline memungkinkan untuk menghubungkan beberapa perintah atau utilitas sistem untuk membentuk fungsi yang lebih kompleks.
+
+Perintah-perintah Penting:
+
+- echo: Digunakan untuk menampilkan teks ke layar atau mengalihkannya ke file.
+- cat: Digunakan untuk menampilkan isi dari file atau menggabungkan beberapa file.
+- more: Digunakan untuk menampilkan isi file satu layar pada satu waktu.
+- sort: Digunakan untuk mengurutkan baris-baris dalam file.
+grep: Digunakan untuk mencari pola teks dalam file.
+- wc: Digunakan untuk menghitung jumlah baris, kata, dan karakter dalam file.
+- cut: Digunakan untuk memilih bagian tertentu dari setiap baris dalam file.
+- uniq: Digunakan untuk menghapus baris-baris yang duplikat dari file.
+
 ## LAPORAN RESMI:
 
 1. Analisa hasil percobaan 1 sampai dengan 4, untuk setiap perintah jelaskan    tampilannya.
