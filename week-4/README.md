@@ -102,6 +102,12 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
     ```
     $ ps
     ```
+    Hasil Output
+
+   Perintah $ ps digunakan untuk menampilkan proses yang sedang berjalan pada sistem (kernel) dan kemudian ditampilkan pada layar (proses status). Input berasal dari kernel, dan output berasal dari layar.
+
+   ![App Screenshot](assets/img/percobaansyop/1.png)
+
 2. Output ke layar (standar output), input dari keyboard (standard input)
    ```
     $ cat
@@ -111,12 +117,23 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
     exit dengan ^d
     [Ctrl-d]
    ```
+   Hasil Output
+
+   $ cat merupakan perintah mengambil input dari keyboard dan menampilkan output ke layar.
+
+
+   ![App Screenshot](assets/img/percobaansyop/2.png)
 
 3. Input nama direktori, output tidak ada (membuat direktori baru), bila terjadi error maka tampilan error pada layar (standard error)
    ```
    $ mkdir mydir
    $ mkdir mydir **(Terdapat pesan error)**
    ```
+   Hasil Output
+
+   Perintah $ mkdir digunakan untuk membuat direktori baru di sistem file. Itu akan membuat direktori jika direktori yang diinginkan belum ada, tetapi jika direktori dengan nama yang sama sudah ada, maka akan terjadi kesalahan.
+
+    ![App Screenshot](assets/img/percobaansyop/3.png)
 
 ## Percobaan 2 : Pembelokan (redirection)
 1. Pembelokan standar output
@@ -124,17 +141,36 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
     $ cat 1> myfile.txt
     Ini adalah teks yang saya simpan ke file myfile.txt
    ```
+   Hasil Output
+
+   Operator **>** digunakan untuk melakukan pembelokan output standar. Perintah **cat** dalam kasus ini menyalin atau "mengeluarkan" teks yang Anda berikan ke file tertentu, dalam hal ini **myfile.txt**. Ini berarti Anda tidak menampilkan teks di terminal, tetapi menyimpannya ke dalam file.
+
+    ![App Screenshot](assets/img/percobaansyop/4.png)
+
 2. Pembelokan standar input, yaitu input dibelokkan dari keyboard menjadi dari file
    ```
     $ cat 0< myfile.txt
     $ cat myfile.txt
    ```
+   Hasil Output
+
+   0< merupakan metode pembelokan standar input, yaitu input dibelokkan dari
+   keyboard menjadi dari file. Alternatifnya yaitu dengan menggunakan <
+
+   ![App Screenshot](assets/img/percobaansyop/5.png)
+
 3. Pembelokan standar error untuk disimpan di file
    ```
     $ mkdir mydir (Terdapat pesan error)
     $ mkdir mydir 2> myerror.txt
     $ cat myerror.txt
    ```
+   Hasil Output
+
+   2> merupakan metode pembelokan standar error untuk kemudian disimpan di file
+
+   ![App Screenshot](assets/img/percobaansyop/6.png)
+
 4. Notasi 2>&1 : pembelokan standar error (2>) adalah identik dengan file descriptor 1.
    ```
     $ ls filebaru (Terdapat pesan error)
@@ -143,12 +179,25 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
     $ ls filebaru 2> out.txt 2>&
     $ cat out.txt
    ```
+   Hasil Output
+
+   Notasi 2>&1 : pembelokan standar error (2>) adalah identik dengan file descriptor 1.
+
+   ![App Screenshot](assets/img/percobaansyop/7.png)
+
 5. Notasi 1>&2 (atau >&2) : pembelokan standar output adalah sama dengan file descriptor 2 yaitu standar error
    ```
    $ echo “mencoba menulis file” 1> baru
    $ cat filebaru 2> baru 1>&
    $ cat baru
    ```
+   Hasil Output
+
+   Notasi 1>&2 (atau >&2) : pembelokan standar output adalah sama dengan file descriptor 2
+   yaitu standar error
+
+   ![App Screenshot](assets/img/percobaansyop/8.png)
+
 6. Notasi >> (append)
    ```
    $ echo “kata pertama” > surat
@@ -158,6 +207,13 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
    $ echo “kata keempat” > surat
    $ cat surat
    ```
+   Hasil Output
+
+   Notasi >> (append) digunakan untuk membelokkan tampilan standard output ke file tanpa
+   menghapus isi sebelumnya.
+
+   ![App Screenshot](assets/img/percobaansyop/9.png)
+
 7. Notasi here document (<<++ .... ++) digunakan sebagai pembatas input dari keyboard. Perhatikan bahwa tanda pembatas dapat digantikan dengan tanda apa saja, namun harus sama dan tanda penutup harus diberikan pada awal baris
    ```
    $ cat <<++
@@ -171,10 +227,24 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
    Ok!
    %%%
    ```
+   Hasil Output
+
+   Notasi here document (<<++ .... ++) digunakan untuk pembatas input dari keyboard.
+   Perhatikan bahwa tanda pembatas dapat digantikan   dengan tanda apa saja tetapi harus sama
+   dan tanda penutup harus diberikan pada awal baris  
+
+   ![App Screenshot](assets/img/percobaansyop/10.png)
+
 8. Notasi – (input keyboard) adalah representan input dari keyboard. Artinya menampilkan file 1, kemudian menampilkan input dari keyboard dan menampilkan file 2. Perhatikan bahwa notasi “-“ berarti menyelipkan input dari keyboard
   ```
   $ cat myfile.txt – surat
   ```
+  Hasil Output
+
+  Perintah cat myfile.txt - surat akan menampilkan isi dari file myfile.txt diikuti oleh input dari keyboard, dan kemudian menampilkan isi dari file surat
+
+   ![App Screenshot](assets/img/percobaansyop/11.png)
+
 
 ## Percobaan 3 : Pipa (pipeline)
 
@@ -189,21 +259,47 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
    $ ls –l /etc | more
    $ ls –l /etc | sort | more
    ```
+   Hasil Output
+
+   Perintah pertama, $ who, menampilkan daftar pengguna yang sedang login. Kemudian, perintah $ who | sort mengurutkan daftar pengguna tersebut secara alfabetis. Perintah berikutnya, $ who | sort -r, mengurutkan daftar pengguna secara terbalik, dari yang terakhir ke yang pertama. Perintah $ who > tmp menyimpan daftar pengguna ke dalam file sementara bernama tmp. Perintah $ sort tmp kemudian mengurutkan isi file tmp. Setelah selesai, perintah $ rm tmp menghapus file tmp. Selanjutnya, perintah $ ls -l /etc | more menampilkan detail dari semua file dan direktori dalam direktori /etc, satu layar pada satu waktu. Perintah terakhir, $ ls -l /etc | sort | more, menampilkan detail file dan direktori dalam /etc yang sudah diurutkan secara alfabetis, satu layar pada satu waktu.
+
+   ![App Screenshot](assets/img/percobaansyop/13.png)
+   ![App Screenshot](assets/img/percobaansyop/14.png)
+   ![App Screenshot](assets/img/percobaansyop/15.png)
+   
 2. Untuk membelokkan standart output ke file, digunakan operator ">"
    ```
    $ echo hello
    $ echo hello > output
    $ cat output
    ```
+   Hasil Output
+
+   Pertama, perintah $ echo hello mencetak kata "hello" ke output standar. Kemudian, perintah $ echo hello > output digunakan untuk mengalihkan output dari perintah echo hello ke dalam file bernama "output". Jika file tersebut belum ada, maka akan dibuat. Setelah itu, perintah $ cat output digunakan untuk menampilkan isi dari file "output". Hasilnya, isi dari file "output" akan sama dengan output dari perintah echo hello, yaitu "hello".
+
+   ![App Screenshot](assets/img/percobaansyop/16.png)
+
 3. Untuk menambahkan output ke file digunakan operator ">>"
    ```
    $ echo bye >> output
    $ cat output
    ```
+   Hasil Output
+
+   perintah echo bye >> output menambahkan kata "bye" ke dalam file "output" tanpa menghapus isinya yang sudah ada sebelumnya, sedangkan perintah cat output digunakan untuk menampilkan isi file "output", yang sekarang berisi "hello bye".
+
+   ![App Screenshot](assets/img/percobaansyop/17.png)
+
 4. Untuk membelokkan standart input digunakan operator "<"
    ```
    $ cat < output
    ```
+   Hasil Output
+
+    operator "<" digunakan untuk mengalihkan input standar dari file "output" ke perintah cat. Ini berarti bahwa cat akan membaca isi dari file "output" sebagai input, bukan langsung dari terminal. Hasilnya, cat akan menampilkan isi dari file "output" ke terminal. Jadi, perintah $ cat < output akan menampilkan isi dari file "output" ke terminal.
+
+   ![App Screenshot](assets/img/percobaansyop/18.png)
+
 5. Pembelokan standart input dan standart output dapat dikombinasikan tetapi tidak boleh menggunakan nama file yang sama sebagai standart input dan output.
    ```
    $ cat < output > out
@@ -216,6 +312,11 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
    [Ctrl-c]
    $ cat out
    ```
+   Hasil Output
+
+   pembelokan standar input dan output digunakan secara bersamaan. Awalnya, isi dari file "output" disalin ke dalam file "out" menggunakan perintah $ cat < output > out. Kemudian, perintah $ cat out digunakan untuk menampilkan isi dari file "out". Namun, saat mencoba menambahkan isi file "output" ke dalam "out" menggunakan $ cat < output >> out, proses tersebut gagal karena menggunakan nama file yang sama. Percobaan menimpa isi file "output" dengan isi yang sama menggunakan $ cat < output > output juga tidak berhasil. Terakhir, percobaan untuk menambahkan isi file "out" ke dalam "out" sendiri dengan $ cat < out >> out menyebabkan proses terjebak dalam pengulangan tak terbatas, sehingga perlu dihentikan menggunakan tombol Ctrl-c. Setelahnya, isi dari file "out" tetap tidak berubah.
+
+   ![App Screenshot](assets/img/percobaansyop/19.png)
 
 ## Percobaan 4 : Filter
 1. Pipa juga digunakan untuk mengkombinasikan utilitas sistem untuk membentuk fungsi yang lebih kompleks
@@ -241,6 +342,17 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
     $ cat kelas1.txt kelas2.txt > kelas.txt
     $ cat kelas.txt | sort | uniq
    ```
+   Hasil Output
+
+   Pertama, perintah $ w -h | grep <user> digunakan untuk menampilkan informasi pengguna yang sedang login dengan nama pengguna tertentu. Perintah berikutnya, $ grep <user> /etc/passwd, digunakan untuk mencari nama pengguna tertentu dalam file /etc/passwd.
+
+   Selanjutnya, perintah $ ls /etc | wc digunakan untuk menghitung jumlah baris, kata, dan byte dalam output dari perintah ls /etc, sementara perintah $ ls /etc | wc -l digunakan untuk menghitung jumlah file dan direktori dalam direktori /etc.
+
+   Kemudian, pengguna diminta untuk memasukkan teks ke dalam file kelas1.txt menggunakan perintah cat > kelas1.txt, diikuti dengan memasukkan teks ke dalam file kelas2.txt menggunakan perintah cat > kelas2.txt. Setelah itu, isi dari kedua file tersebut digabungkan menggunakan perintah cat kelas1.txt kelas2.txt | sort, yang akan menyortir daftar nama-nama dalam kedua file secara alfabetis.
+
+   Setelah menggabungkan isi kedua file tersebut, perintah $ cat kelas1.txt kelas2.txt > kelas.txt digunakan untuk menyimpan hasil gabungan ke dalam file baru bernama kelas.txt. Kemudian, perintah $ cat kelas.txt | sort | uniq digunakan untuk menyortir nama-nama dalam file kelas.txt dan menghapus baris yang duplikat menggunakan perintah uniq.
+
+   ![App Screenshot](assets/img/percobaansyop/20.png)
 
 ## LATIHAN:
 
