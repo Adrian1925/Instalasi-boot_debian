@@ -372,6 +372,8 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
 
    ![App Screenshot](assets/img/percobaansyop/b.png)
 
+   ![App Screenshot](assets/img/percobaansyop/c.jpeg)
+
 ## LATIHAN:
 
 1. Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output ke file baru.
