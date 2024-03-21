@@ -334,7 +334,7 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
 
    pembelokan standar input dan output digunakan secara bersamaan. Awalnya, isi dari file "output" disalin ke dalam file "out" menggunakan perintah $ cat < output > out. Kemudian, perintah $ cat out digunakan untuk menampilkan isi dari file "out". Namun, saat mencoba menambahkan isi file "output" ke dalam "out" menggunakan $ cat < output >> out, proses tersebut gagal karena menggunakan nama file yang sama. Percobaan menimpa isi file "output" dengan isi yang sama menggunakan $ cat < output > output juga tidak berhasil. Terakhir, percobaan untuk menambahkan isi file "out" ke dalam "out" sendiri dengan $ cat < out >> out menyebabkan proses terjebak dalam pengulangan tak terbatas, sehingga perlu dihentikan menggunakan tombol Ctrl-c. Setelahnya, isi dari file "out" tetap tidak berubah.
 
-   ![App Screenshot](assets/img/percobaansyop/19.png)
+   ![App Screenshot](assets/img/percobaansyop/20.png)
 
 ## Percobaan 4 : Filter
 1. Pipa juga digunakan untuk mengkombinasikan utilitas sistem untuk membentuk fungsi yang lebih kompleks
@@ -370,7 +370,7 @@ Beberapa perintah Linux yang digunakan untuk proses penyaringan antara lain :
 
    Setelah menggabungkan isi kedua file tersebut, perintah $ cat kelas1.txt kelas2.txt > kelas.txt digunakan untuk menyimpan hasil gabungan ke dalam file baru bernama kelas.txt. Kemudian, perintah $ cat kelas.txt | sort | uniq digunakan untuk menyortir nama-nama dalam file kelas.txt dan menghapus baris yang duplikat menggunakan perintah uniq.
 
-   ![App Screenshot](assets/img/percobaansyop/20.png)
+   ![App Screenshot](assets/img/percobaansyop/b.png)
 
 ## LATIHAN:
 
