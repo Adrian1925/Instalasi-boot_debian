@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 style="text-align: center;font-weight: bold">Praktikum 4<br>SysOp Operasi Input Output</h1>
+  <h1 style="text-align: center;font-weight: bold">Praktikum 5<br>SysOp Proses dan Manajemen Proses</h1>
   <h4 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h4>
 </div>
 <br />
@@ -7,9 +7,7 @@
   <img src="https://upload.wikimedia.org/wikipedia/id/4/44/Logo_PENS.png" alt="Logo PENS">
   <h3 style="text-align: center;">Disusun Oleh : </h3>
   <p style="text-align: center;">
-    <strong>Mochammad Fahril Rizal (3123500013)</strong><br>
     <strong>Adrian Yoga Chrisarianto (3123500021)</strong><br>
-    <strong>Muhammad Arief Wicaksono Putra Santoso (3122500022)</strong>
   </p>
 
 <h3 style="text-align: center;line-height: 1.5">Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
