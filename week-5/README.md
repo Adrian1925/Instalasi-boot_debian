@@ -125,7 +125,7 @@ Utilitas untuk melakukan pengontrolan proses dapat ditemukan pada sistem UNIX ad
 1. Login sebagai user.
 2. Download program C++ untuk menampilkan bilangan prima yang bernama _primes_.
 
-    Inatall C++ dengan perintah '$ sudo apt-get install g++'.
+    Install C++ dengan perintah '$ sudo apt-get install g++'.
     ```
     $ sudo apt-get install g++
     ```
