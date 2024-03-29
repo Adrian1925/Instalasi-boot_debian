@@ -7,7 +7,7 @@
   <img src="https://upload.wikimedia.org/wikipedia/id/4/44/Logo_PENS.png" alt="Logo PENS">
   <h3 style="text-align: center;">Disusun Oleh : </h3>
   <p style="text-align: center;">
-    <strong>Mochammad Fahril Rizal (3123500013)</strong>
+    <strong>Adrian Yoga Chrisarianto (3123500021)</strong>
   </p>
 <h3 style="text-align: center;line-height: 1.5">Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
   <hr><hr>
@@ -122,7 +122,7 @@ job lagi dengan __Ctrl-Z__. Kemudian gunakan perintah `bg` untuk meletakkan job 
     ```
     $ fg
     ```
-    ![img](assets/img/4.png)
+    ![img](assets/img/.png)
 
 4. Job pada background dapat digunakan untuk menampilkan teks pada terminal, dimana dapat diabaikan jika mencoba mengerjakan job lain.
 ```
