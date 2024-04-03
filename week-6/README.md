@@ -122,13 +122,17 @@ job lagi dengan __Ctrl-Z__. Kemudian gunakan perintah `bg` untuk meletakkan job 
     ```
     $ fg
     ```
-    ![img](assets/img/4.png)
+
+ ![img](assets/img/4.png)
 
 4. Job pada background dapat digunakan untuk menampilkan teks pada terminal, dimana dapat diabaikan jika mencoba mengerjakan job lain.
 ```
 $ yes &
 ```
 Untuk menghentikannya tidak dapat menggunakan Ctrl-C. Job harus dipindah ke foreground, baru dihentikan dengan cara tekan fg dan tekan Enter, kemudian dilanjutkan dengan Ctrl-Z untuk menghentikan sementara.
+
+![img](assets/img/5.png)
+
 
 5.	Apabila ingin menjalankan banyak job dalam satu waktu, letakkan job pada
 foreground atau background dengan memberikan job ID
@@ -239,22 +243,66 @@ $ sh
 $ ps
 f.	Sebutkan PID yang paling besar dan kemudian buat urut-urutan proses sampai ke PPID = 1.
 2.	Cobalah format tampilan ps dengan opsi berikut dan perhatikan hasil tampilannya :
-•	-f	daftar penuh
-•	-j	format job
-•	j	format job control
-•	l	daftar memanjang
-•	s	format sinyal
-•	v	format virtual memory
-•	X	format register i386
+    1. -f	daftar penuh
+
+    ![img](assets/img/lat1.png)
+
+    2. -j	format job
+
+    ![img](assets/img/lat2.png)
+
+    3. j	format job control
+
+    ![img](assets/img/lat3.png)
+
+    4. l	daftar memanjang
+
+    ![img](assets/img/lat5.png)
+
+    5. s	format sinyal
+
+    ![img](assets/img/lat6.png)
+
+    6. v	format virtual memory
+
+    ![img](assets/img/lat7.png)
+
+    7. X	format register i386
+    ![img](assets/img/lat8.png)
+
 2.	Lakukan urutan pekerjaan berikut :
+
 a.	Gunakan perintah find ke seluruh direktory pada sistem, belokkan output sehingga daftar direktori dialihkan ke file directories.txt dan daftar pesan error dialihkan ke file errors.txt
+
+![img](assets/img/lat9.png)
+
 b.	Gunakan perintah sleep 5. Apa yang terjadi dengan perintah ini ?
+
+![img](assets/img/lat10.png)
+
 c.	Jalankan perintah pada background menggunakan &
+
+![img](assets/img/lat11.png)
+
 d.	Jalankan sleep 15 pada foreground , hentikan sementara dengan Ctrl- Z dan kemudian letakkan pada background dengan bg. Ketikkan jobs. Ketikkan ps. Kembalikan job ke foreground dengan perintahfg.
+
+![img](assets/img/lat12.png)
+
 e.	Jalankan sleep 15 pada background menggunakan & dan kemudian gunakan perintah kill untuk menghentikan proses diikuti job number.
+
+![img](assets/img/lat13.png)
+
 f.	Jalankan sleep 15 pada background menggunakan & dan kemudian gunakan kill untuk menghentikan sementara proses. Gunakan bg untuk melanjutkan menjalankan proses.
+
+![img](assets/img/lat14.png)
+
 g.	Jalankan sleep 60 pada background 5 kali dan terminasi semua pada dengan menggunakan perintah killall.
+
+![img](assets/img/lat15.png)
+
 h.	Gunakan perintah ps, w dan top untuk menunjukkan semua proses yang sedang dieksekusi.
+
+![img](assets/img/lat16.png)
 
 
 
