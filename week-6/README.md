@@ -122,7 +122,7 @@ job lagi dengan __Ctrl-Z__. Kemudian gunakan perintah `bg` untuk meletakkan job 
     ```
     $ fg
     ```
-    ![img](assets/img/.png)
+    ![img](assets/img/4.png)
 
 4. Job pada background dapat digunakan untuk menampilkan teks pada terminal, dimana dapat diabaikan jika mencoba mengerjakan job lain.
 ```
@@ -145,6 +145,118 @@ $ ps -fae
 $ kill -9 <NomorPID>
 
 8.	Logout dan tekan Alt+F7 untuk kembali ke mode grafis
+
+## Percobaan 6 : Percobaan dengan Penjadwalan Prioritas
+
+1.	Login sebagai root.
+2.	Buka 3 terminal, tampilkan pada screen yang sama.
+
+ ![img](assets/img/l1.png)
+
+3.	Pada setiap terminal, ketik PS1 = ” \w:” diikuti Enter. \w menampilkan path pada direktori home.
+
+![img](assets/img/l2.png)
+
+4.	Karena login sebagai root, maka akan ditampilkan ~: pada setiap terminal. Untuk setiap terminal ketik pwd dan tekan Enter untuk melihat bahwa Anda sedang berada pada direktori /root.
+
+![img](assets/img/l3.png)
+
+5.	Buka terminal lagi (keempat), atur posisi sehingga keempat terminal terlihat
+pada screen.
+
+![img](assets/img/l4.png)
+
+6.	Pada terminal keempat, ketik top dan tekan Enter. Maka program top akan muncul. Ketik i. Top akan menampilkan proses yang aktif. Ketik lmt. Top tidak lagi menampilkan informasi pada bagian atas dari screen. Pada percobaan ini, terminal ke empat sebagai je ndela Top.
+
+![img](assets/img/l5.png)
+![img](assets/img/l6.png)
+![img](assets/img/l7.png)
+
+7.	Pada terminal 1, bukalah program executable C++ dengan mengetik program
+yes dan tekan Enter.
+
+![img](assets/img/l8.png)
+
+8.	Ulangi langkah 7 untuk terminal 2.
+
+![img](assets/img/l9.png)
+
+9.	Jendela Top akan menampilkan dua program yes sebagai proses yang berjalan. Nilai %CPU sama pada keduanya. Hal ini berarti kedua proses mengkonsumsi waktu proses yang sama dan berjalan sama cepat. PID dari kedua proses akan berbeda, misalnya 3148 dan 3149. Kemudian gunakan terminal 3 (yang tidak menjalankan primes maupun Jendela Top) dan ketik renice 19 <PID terimnal 1> (contoh : renice 19 3148) dan diikuti Enter. Hal ini berarti mengganti penjadwalan prioritas dari proses ke 19.
+
+![img](assets/img/l10.png)
+
+![img](assets/img/l11.png)
+
+10.	Tunggu beberapa saat sampai program top berubah dan terlihat pada jendela
+Top. Pada kolom STAT memperlihatkan N untuk proses 3148. Hal ini berarti bahwa penjadwalan prioritas untuk proses 3148 lebih besar (lebih lambat) dari 0. Proses 3149 berjalan lebih cepat.
+
+![img](assets/img/l12.png)
+
+11.	Program top juga mempunyai fungsi yang sama dengan program renice. Pilih Jendela Top dan tekan r. Program top terdapat prompt PID to renice: tekan 3148 (ingat bahwa Anda harus mengganti 3148 dengan PID
+Anda sendiri) dan tekan Enter. Program top memberikan prompt Renice PID 3148 to value: tekan -19 dan tekan Enter.
+
+![img](assets/img/l13.png)
+![img](assets/img/l14.png)
+
+12.	Tunggu beberapa saat sampai top berubah dan lihat nilai %CPU pada kedua proses. Sekarang proses 3148 lebih cepat dari proses 3149. Kolom status menunjukkan < pada proses 3148 yang menunjukkan penjadwalan
+prioritas lebih rendah (lebih cepat) dari nilai 0.
+
+![img](assets/img/l15.png)
+
+13.	Pilih terminal 3 (yang sedang tidak menjalankan yes atau program top) dan ketik nice –n -10 yes dan tekan Enter. Tunggu beberapa saat agar
+program top berubah dan akan terlihat proses primes ketiga. Misalnya PID nya 4107. Opsi -10 berada pada kolom NI (penjadwalan prioritas).
+
+![img](assets/img/l16.png)
+
+14.	Jangan menggunakan mouse dan keyboard selama 10 detik. Program top menampilkan proses yang aktif selain program yes. Maka akan terlihat proses top terdaftar tetapi %CPU kecil (dibawah 1.0) dan konsisten. Juga terlihat proses berhubungan dengan dekstop grafis seperti X, panel dll.
+
+![img](assets/img/l17.png)
+
+15.	Pindahkan mouse sehingga kursor berubah pada screen dan lihat apa yang
+terjadi dengan tampilan top.  Proses tambahan akan muncul dan nilai
+%CPU berubah sebagai bagian grafis yang bekerja. Satu alasan adalah bahwa proses 4107 berjalan pada penjadwalan prioritas tinggi. Pilih jendela Top, ketik r. PID to renice : muncul prompt. Ketik 4107 (ubahlah 4107 dengan PID Anda) dan tekan Enter. Renice PID 4107 to value: muncul prompt. Ketik 0 dan tekan Enter. Sekarang pindahkan mouse ke sekeliling screen. Lihat perubahannya.
+
+![img](assets/img/l18.png)
+![img](assets/img/l19.png)
+![img](assets/img/l20.png)
+
+16.	Tutup semua terminal window.
+17.	Logout dan login kembali sebagai user.
+
+## LATIHAN:
+
+1.	Masuk ke tty2 dengan Ctrl+Alt+F2. Ketik ps – au dan tekan Enter. Kemudian perhatikan keluaran sebagai berikut :
+a.	Sebutkan nama -nama proses yang bukan root
+b.	Tulis PID dan COMMAND dari proses yang paling banyak menggunakan CPU time
+c.	Sebutkan buyut proses dan PID dari proses tersebut
+d.	Sebutkan beberapa proses daemon
+e.	Pada prompt login lakukan hal- hal sebagai berikut :
+$ csh
+$ who
+$ bash
+$ ls
+$ sh
+$ ps
+f.	Sebutkan PID yang paling besar dan kemudian buat urut-urutan proses sampai ke PPID = 1.
+2.	Cobalah format tampilan ps dengan opsi berikut dan perhatikan hasil tampilannya :
+•	-f	daftar penuh
+•	-j	format job
+•	j	format job control
+•	l	daftar memanjang
+•	s	format sinyal
+•	v	format virtual memory
+•	X	format register i386
+2.	Lakukan urutan pekerjaan berikut :
+a.	Gunakan perintah find ke seluruh direktory pada sistem, belokkan output sehingga daftar direktori dialihkan ke file directories.txt dan daftar pesan error dialihkan ke file errors.txt
+b.	Gunakan perintah sleep 5. Apa yang terjadi dengan perintah ini ?
+c.	Jalankan perintah pada background menggunakan &
+d.	Jalankan sleep 15 pada foreground , hentikan sementara dengan Ctrl- Z dan kemudian letakkan pada background dengan bg. Ketikkan jobs. Ketikkan ps. Kembalikan job ke foreground dengan perintahfg.
+e.	Jalankan sleep 15 pada background menggunakan & dan kemudian gunakan perintah kill untuk menghentikan proses diikuti job number.
+f.	Jalankan sleep 15 pada background menggunakan & dan kemudian gunakan kill untuk menghentikan sementara proses. Gunakan bg untuk melanjutkan menjalankan proses.
+g.	Jalankan sleep 60 pada background 5 kali dan terminasi semua pada dengan menggunakan perintah killall.
+h.	Gunakan perintah ps, w dan top untuk menunjukkan semua proses yang sedang dieksekusi.
+
+
 
 ## Kesimpulan
 Proses dan manajemen proses memainkan peran kunci dalam operasi sistem Linux, mengatur dan mengelola eksekusi program serta penggunaan sumber daya sistem. Konsep proses dalam sistem operasi Linux mencakup pengelompokan program yang sedang berjalan ke dalam unit-unit yang dapat dikelola, dengan masing-masing memiliki identitas unik yang disebut PID (Process ID). Ini memungkinkan sistem untuk melacak dan mengontrol proses secara efisien.
