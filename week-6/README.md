@@ -142,11 +142,18 @@ $ bg %2
 atau
 $ %2
 ```
+
+![img](assets/img/6.png)
+
 6.	tekan fg dan tekan Enter, kemudian dilanjutkan dengan Ctrl -Z untuk menghentikan sementara.
+
+![img](assets/img/7.png)
 
 7.	Lihat job dengan perintah ps -fae dan tekan Enter. Kemudian hentikan proses dengan perintah kill.
 $ ps -fae
 $ kill -9 <NomorPID>
+
+![img](assets/img/8.png)
 
 8.	Logout dan tekan Alt+F7 untuk kembali ke mode grafis
 
@@ -294,7 +301,7 @@ e.	Jalankan sleep 15 pada background menggunakan & dan kemudian gunakan perintah
 
 f.	Jalankan sleep 15 pada background menggunakan & dan kemudian gunakan kill untuk menghentikan sementara proses. Gunakan bg untuk melanjutkan menjalankan proses.
 
-![img](assets/img/lat14.png)
+ ![img](assets/img/lat14.png)
 
 g.	Jalankan sleep 60 pada background 5 kali dan terminasi semua pada dengan menggunakan perintah killall.
 
@@ -303,6 +310,19 @@ g.	Jalankan sleep 60 pada background 5 kali dan terminasi semua pada dengan meng
 h.	Gunakan perintah ps, w dan top untuk menunjukkan semua proses yang sedang dieksekusi.
 
 ![img](assets/img/lat16.png)
+
+i.	Gunakan perintah ps –aeH untuk menampilkan hierarki proses. Carilah init proses. Apakah Anda bisa identifikasi sistem daemon yang penting ? Dapatkan Anda identifikasi shell dan subprose s ?
+
+![img](assets/img/lat17.png)
+![img](assets/img/lat171.png)
+
+j.	Kombinasikan ps –fae dan grep, apa yang Anda lihat ?
+
+![img](assets/img/lat18.png)
+
+k.	Jalankan proses sleep 300 pada background. Log off komputer dan log in kembali. Lihat daftar semua proses yang berjalan. Apa yang terjadi pada proses sleep ?
+
+![img](assets/img/lat19.png)
 
 
 
