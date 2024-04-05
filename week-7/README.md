@@ -121,6 +121,7 @@ int main(void) {
   return 0;
 }
 ```
+
 ![img](assets/img/1.png)
 - Parent Process dibuat (PID).
 - Parent Process mencetak informasi proses (PID, PPID, UID) 3 kali dengan sleep (delay) 3 detik di antara setiap iterasi.
@@ -151,7 +152,9 @@ int main(void) {
   return 0;
 }
 ```
+
 ![img](assets/img/2.png)**loop tidak berujung ctrl+c untuk menghentikan proses*
+
 - Parent Process membuat Child Process.
 - Kedua proses (Parent dan Child) terus mencetak PID dan nilai variabel x yang diubah di dalam loop tak hingga (perilaku tidak disarankan).
 - Pohon Proses (tidak stabil karena Infinite loop):
@@ -181,6 +184,7 @@ int main(void) {
   return 0;
 }
 ```
+
 ![img](assets/img/3.png)
 - Proses induk membuat proses anak.
 - Kedua proses (Parent dan Child) mencetak PID mereka sendiri 5 kali dengan sleep (delay) di antara setiap iterasi.
@@ -486,9 +490,8 @@ int main() {
     return 0;
 }
 ```
-![img](assets/img/2-1.png)
-![img](assets/img/2-12.png)
-![img](assets/img/2-2.png)
+![img](assets/img/tugas2.png)
+
 
 **Analisa Kode**
 1. Fungsi Perkalian Matriks: Fungsi `perkalian()` digunakan untuk melakukan perkalian matriks. Matriks hasil dideklarasikan dalam fungsi utama, kemudian diisi oleh fungsi perkalian().
