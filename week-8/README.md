@@ -18,28 +18,28 @@
 # Daftar Isi
 1. [Apa itu bash Programming](#bash-programming).
 2. [Bash - Variabel](#bash---variables).
-4. [Bash - Comments](#bash---comments).
-5. [Bash - Arrays](#bash---arrays).
-6. [Bash - Expansion](#bash---expansion).
-7. [Bash - Condional Expression](#bash---conditional-expression).
-8. [Bash - Case Statements](#bash---case-statements).
-9. [Bash - Special Characters](#bash---special-characters).
-11. [Bash - Loops](#bash---loops).
-12. [Bash - Append String](#bash---append-string).
-13. [Bash - Functions](#function).
-15. [Bash - Operators](#bash---operators).
-16. [Bash - Numbers Comparison](#bash---numbers-comparison).
-17. [Bash - Check Directory](#bash---check-directory).
-18. [Bash - File Name](#bash---file-name).
-19. [Bash - Split String](#bash---split-string).
-20. [Bash - String Length](#bash---string-length).
-21. [Bash - bashrc](#bash---bashrc).
-22. [Bash - Ternary Operator](#bash---ternary-operator).
-23. [Bash - Lowercase](#bash---lowercase).
-24. [Bash - Uppercase](#bash---uppercase).
-25. [Bash - Substring](#bash---substring).
-26. [Bash - variable set](#bash---variable-set).
-27. [Bash - Iterate Nos](#bash---iterate-nos).
+3. [Bash - Comments](#bash---comments).
+4. [Bash - Arrays](#bash---arrays).
+5. [Bash - Expansion](#bash---expansion).
+6. [Bash - Condional Expression](#bash---conditional-expression).
+7. [Bash - Case Statements](#bash---case-statements).
+8. [Bash - Special Characters](#bash---special-characters).
+9. [Bash - Loops](#bash---loops).
+10. [Bash - Append String](#bash---append-string).
+11. [Bash - Functions](#function).
+12. [Bash - Operators](#bash---operators).
+13. [Bash - Numbers Comparison](#bash---numbers-comparison).
+14. [Bash - Check Directory](#bash---check-directory).
+15. [Bash - File Name](#bash---file-name).
+16. [Bash - Split String](#bash---split-string).
+17. [Bash - String Length](#bash---string-length).
+18. [Bash - bashrc](#bash---bashrc).
+19. [Bash - Ternary Operator](#bash---ternary-operator).
+20. [Bash - Lowercase](#bash---lowercase).
+21. [Bash - Uppercase](#bash---uppercase).
+22. [Bash - Substring](#bash---substring).
+23. [Bash - variable set](#bash---variable-set).
+24. [Bash - Iterate Nos](#bash---iterate-nos).
 
 
 ## Bash Programming 
