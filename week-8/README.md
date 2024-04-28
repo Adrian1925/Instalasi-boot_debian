@@ -162,11 +162,11 @@ AGE=25
 
 ### Cara menggunakan variabel di bash
 
-![App Screenshot](img/variable1.jpg)
+![App Screenshot](img/bash-variable/1-1.png)
 
 Pertama, deklarasikan variabel *AGE* dan beri nilai 25. Kemudian, gunakan `echo` untuk menampilkan outputnya. Simbol dolar `$` sebelum nama variabel sangat penting untuk mengakses nilainya. Untuk deklarasi variable di shell mirip dengan beberapa bahasa pemograman seperti, php, perl, bash dan beberapa framework javascript
 
-![App Screenshot](img/variable2.jpg)
+![App Screenshot](img/bash-variable/1-2.png)
 
 ### Bash Shell Read Only variables
 
@@ -174,17 +174,17 @@ Pertama, deklarasikan variabel *AGE* dan beri nilai 25. Kemudian, gunakan `echo`
 
 Setelah variabel diberi nilai, kita dapat mengubahnya menjadi nilai baru menggunakan operator penugasan =.
 
-![App Screenshot](img/variable4.jpg)
+![App Screenshot](img/bash-variable/2.png)
 
 ### Bash Unset Variable
 
 Keyword _`unset`_ membantu menghapus nilai dari variabel yang ditentukan. Variabel tetap dapat diakses tetapi akan mencetak nilai kosong.
 
-![App Screenshot](img/variable5.jpg)
+![App Screenshot](img/bash-variable/3-1.png)
 
 Output:
 
-![App Screenshot](img/variable6.jpg)
+![App Screenshot](img/bash-variable/3-2.png)
 
 ### Variables Scope
 
@@ -203,13 +203,13 @@ Ada berbagai macam cara yang dapat kita lakukan
 ### Bagaimana cara membaca file baris demi baris di bash Shell?
 - menggunakan perulangan while
 
-![App Screenshot](img/loopfile1.jpg)
+![App Screenshot](img/bash-variable/4-1.png)
 
 Output
 
-![App Screenshot](img/loopfile2.jpg)
+![App Screenshot](img/bash-variable/4-2.png)
 
-Output diatas merupakan isi dari file `loop-file.txt` 
+Output diatas merupakan isi dari file `file.txt` 
 
 ## Bash - Comments
 
@@ -240,7 +240,11 @@ Untuk menulis komentar satu baris, gunakan simbol `#` di awal komentar. Komentar
 
 Berikut ini adalah contoh komentar satu baris dalam skrip shell.
 
-![App Screenshot](img/comment1.jpg)
+![App Screenshot](img/comments/5-1.png)
+
+Output
+
+![App Screenshot](img/comments/5-2.png)
 
 ### Komentar multi-baris dalam skrip shell
 **Syntax:**
@@ -252,7 +256,8 @@ Multi-line comments
 Multi-line comments
 '
 ```
-![App Screenshot](img/comment3.jpg)
+![App Screenshot](img/comments/6-1.png)
+![App Screenshot](img/comments/6-2.png)
 
 
 ### Kesimpulan
@@ -302,41 +307,41 @@ ${array_name[index]}
 
 Array dapat berisi angka Contoh ini berisi array angka dan loop for untuk dicetak
 
-![App Screenshot](img/array1.jpg)
+![App Screenshot](img/array/7-1.png)
 
 Output:
 
-![App Screenshot](img/array2.jpg)
+![App Screenshot](img/array/7-2.png)
 
 ### Deklarasi Array string dan Loop
 
 Array dapat berisi angka Contoh ini berisi array angka dan loop for untuk dicetak
 
-![App Screenshot](img/array3.jpg)
+![App Screenshot](img/array/8-1.png)
 
 Output:
 
-![App Screenshot](img/array4.jpg)
+![App Screenshot](img/array/8-2.png)
 
 ### Akses elemen pertama array
 
 Dalam array, indeks elemen pertama adalah nol, sehingga `array[0]` mengembalikan elemen pertama.
 
-![App Screenshot](img/array5.jpg)
+![App Screenshot](img/array/9-1.png)
 
 Output:
 
-![App Screenshot](img/array6.jpg)
+![App Screenshot](img/array/9-2.png)
 
 ### Dapatkan element terakhir dalam sebuah array
 
 Dalam skrip bash, Anda dapat menggunakan indeks -1 untuk mendapatkan elemen array terakhir.
 
-![App Screenshot](img/array7.jpg)
+![App Screenshot](img/array/10-1.png)
 
 Output:
 
-![App Screenshot](img/array8.jpg)
+![App Screenshot](img/array/10-2.png)
 
 ### Iterate atau Loop element array
 
@@ -344,31 +349,31 @@ For loop digunakan untuk mengulangi elemen.
 
 Berikut adalah contoh loop array untuk mencetak semua elemen
 
-![App Screenshot](img/array9.jpg)
+![App Screenshot](img/array/11-1.png)
 
 Output:
 
-![App Screenshot](img/array10.jpg)
+![App Screenshot](img/array/11-2.png)
 
 ### Cetak semua elemen array
 
 Gunakan [@] atau [*] untuk mencetak semua elemen array.
 
-![App Screenshot](img/array11.jpg)
+![App Screenshot](img/array/12-1.png)
 
 Output:
 
-![App Screenshot](img/array12.jpg)
+![App Screenshot](img/array/12-2.png)
 
 ### Hapus elemen dari array
 
 Anda dapat menghapus elemen dari array menggunakan `unset` indeks tertentu.
 
-![App Screenshot](img/array13.jpg)
+![App Screenshot](img/array/13-1.png)
 
 Output:
 
-![App Screenshot](img/array14.jpg)
+![App Screenshot](img/array/13-1.png)
 
 ### Menambahkan elemen ke array
 
@@ -378,11 +383,11 @@ Anda dapat menambahkan elemen di posisi indeks mana pun menggunakan sintaks di b
 array[index]=value
 ```
 
-![App Screenshot](img/array15.jpg)
+![App Screenshot](img/array/14-1.png)
 
 Output:
 
-![App Screenshot](img/array16.jpg)
+![App Screenshot](img/array/14-2.png)
 
 ### Array cheat sheet
 
@@ -482,11 +487,11 @@ Berikut adalah cara menulis skrip shell di bash:
 - Tulis perintah dalam file.
 - Simpan file sebagai `hello.sh`.
 
-![App Screenshot](img/expansion1.jpg)
+![App Screenshot](img/bash-expansion/15-1.png)
 
 Output:
 
-![App Screenshot](img/expansion2.jpg)
+![App Screenshot](img/bash-expansion/15-2.png)
 
 ## Bash - Conditional Expression
 
@@ -600,11 +605,11 @@ pattern1)
 
 Contohnya sebagai berikut:
 
-![App Screenshot](img/case1.jpg)
+![App Screenshot](img/case/16-1.png)
 
 Output:
 
-![App Screenshot](img/case2.jpg)
+![App Screenshot](img/case/16-2.png)
 
 ## Bash - Special Characters
 
@@ -616,11 +621,11 @@ Sebagai contoh, dalam perintah `echo` yang pertama, variabel "nama" akan diperlu
 
 Jika tanda kutip tunggal mengandung tanda kutip tunggal bertingkat, Anda perlu menghindarinya dengan menggunakan karakter ``` backtick ```.
 
-![App Screenshot](img/sc1.jpg)
+![App Screenshot](img/special/17-1.png)
 
 Output : 
 
-![App Screenshot](img/sc2.jpg)
+![App Screenshot](img/special/17-2.png)
 
 Tanda kutip ganda (") digunakan untuk mendefinisikan string literal dengan makna khusus. Ketika string mengandung variabel dan ekspansi sintaks, tanda kutip ganda akan menginterpretasikan dan memperluasnya, dengan nilai yang dievaluasi saat runtime.
 
