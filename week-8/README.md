@@ -916,19 +916,19 @@ Operator-operator ini digunakan untuk melakukan operasi logika pada variabel, ek
 
 ``` -eq ``` digunakan untuk logika equal/mencari persamaan nilai
 
-![App Screenshot](img/operator1.jpg)
+![App Screenshot](img/operators/1.png)
 
 Output : 
 
-![App Screenshot](img/operator2.jpg)
+![App Screenshot](img/operators/2.png)
 
 ```-ne``` digunakan untuk logika equal, mencari ketidaksamaan nilai
 
-![App Screenshot](img/operator3.jpg)
+![App Screenshot](img/operators/3.png)
 
 Output : 
 
-![App Screenshot](img/operator4.jpg)
+![App Screenshot](img/operators/4.png)
 
 ## Bash - Numbers Comparison
 
@@ -1008,11 +1008,11 @@ Sebagai contoh, pertimbangkan jalur /home/fahril/run.sh, hasil ekstensinya adala
 
 Awalnya, perintah basename digunakan untuk menghapus jalur direktori dan mengembalikan nama file untuk jalur yang ditentukan, dan nama file ini kemudian digunakan bersama dengan sintaks ekspresi untuk mengembalikan hanya ekstensinya.
 
-![App Screenshot](img/fname1.jpg)
+![App Screenshot](img/file-name/1.png)
 
 Output : 
 
-![App Screenshot](img/fname2.jpg)
+![App Screenshot](img/file-name/2.png)
 
 ## Bash - Split String
 
@@ -1025,31 +1025,31 @@ Perintah awk, sebuah utilitas Linux yang kompatibel dengan semua distribusi bash
 
 Inputnya diberikan menggunakan simbol pipa (|), dan contoh di bawah ini menunjukkan pembagian sebuah string yang berisi titik dua 
 
-![App Screenshot](img/split1.jpg)
+![App Screenshot](img/file-name/3.png)
 
 Output : 
 
-![App Screenshot](img/split2.jpg)
+![App Screenshot](img/file-name/4.png)
 
 ##### split using IFS variable
 
 Di sini, string input terdiri dari elemen-elemen yang dipisahkan oleh tanda hubung. Variabel shell IFS (Internal Field Separator) diatur menjadi tanda hubung, dan string tersebut diiterasi menggunakan loop for.
 
-![App Screenshot](img/split3.jpg)
+![App Screenshot](img/file-name/5.pngg)
 
 Output : 
 
-![App Screenshot](img/split4.jpg)
+![App Screenshot](img/file-name/6.png)
 
 ##### Use Parameter expansion and loop
 
 Ekspansi parameter digunakan untuk mengubah nilai variabel berdasarkan opsi yang ditentukan. Dalam kasus ini, sebuah variabel string dikonversi menjadi sebuah array. Array tersebut kemudian diiterasi menggunakan sintaks loop for, mencetak setiap elemen ke konsol.
 
-![App Screenshot](img/split5.jpg)
+![App Screenshot](img/file-name/7.png)
 
 Output : 
 
-![App Screenshot](img/split6.jpg)
+![App Screenshot](img/file-name/8.png)
 
 ## Bash - String Length
 
@@ -1057,31 +1057,31 @@ Panjang sebuah string ditentukan oleh jumlah karakter yang terkandung di dalamny
 
 Posting ini akan menjelajahi berbagai metode untuk menghitung jumlah karakter dalam sebuah string dengan encoding UTF.
 
-![App Screenshot](img/length1.jpg)
+![App Screenshot](img/string-length/1.png)
 
 Output : 
 
-![App Screenshot](img/length2.jpg)
+![App Screenshot](img/string-length/2.png)
 
 Metode kedua melibatkan penggunaan perintah wc -m, baik langsung dengan sebuah string atau melalui sebuah variabel.
 
 
-![App Screenshot](img/length3.jpg)
+![App Screenshot](img/string-length/3.png)
 
 Output : 
 
-![App Screenshot](img/length4.jpg)
+![App Screenshot](img/string-length/4.png)
 
 echo -n "string" digunakan untuk mencetak string tanpa baris baru (opsi -n). Operator pipa | mengarahkan output dari perintah di sebelah kiri ke perintah di sebelah kanan, dan wc -m menghitung jumlah karakter dalam sebuah string.
 
 Menggunakan Perintah expr
 Metode lain melibatkan penggunaan perintah expr untuk menemukan panjang sebuah string.
 
-![App Screenshot](img/length5.jpg)
+![App Screenshot](img/string-length/5.png)
 
 Output : 
 
-![App Screenshot](img/length6.jpg)
+![App Screenshot](img/string-length/6.png)
 
 Di sini, ${} digunakan untuk substitusi ekspresi, mengganti nilai ekspresi ke dalam string. Perintah expr mengeksekusi ekspresi, dan length adalah argumen yang diberikan untuk menemukan panjang string.
 
