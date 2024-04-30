@@ -726,21 +726,21 @@ Operator perbandingan digunakan untuk memeriksa nilai satu dengan yang lain deng
 
 ##### Bash Athematic expressions
 
-![App Screenshot](img/append1.jpg)
+![App Screenshot](img/Append-String/11.png)
 
 Output : 
 
-![App Screenshot](img/append2.jpg)
+![App Screenshot](img/Append-String/12.png)
 
 ##### Bash Athematic Expansion
 
 seperti ekspresi. Ini menghitung nilai dari suatu ekspresi dan menggantikan hasilnya dengan nilai tersebut, selalu dengan awalan tanda dolar. Misalnya, untuk menghitung rata-rata dari dua angka dan mencetak hasilnya, kita menggunakan sintaks ekspansi yang mengevaluasi ekspresi dan menggantikan hasilnya dengan keluaran dari ekspresi tersebut.
 
-![App Screenshot](img/append3.jpg)
+![App Screenshot](img/Append-String/13.png)
 
 Output : 
 
-![App Screenshot](img/append4.jpg)
+![App Screenshot](img/Append-String/14.png)
 
 ## Function
 
