@@ -1255,17 +1255,20 @@ contoh :
 ![App Screenshot](img/variabelset/varset1.png)
 
 Output : 
+
 ![App Screenshot](img/variabelset/varset1.2.png)
 
 
 ![App Screenshot](img/variabelset/varset2.png)
 
 Output : 
+
 ![App Screenshot](img/variabelset/varset2.2.png)
 
 ![App Screenshot](img/variabelset/varset3.png)
 
 Output : 
+
 ![App Screenshot](img/variabelset/varset3.2.png)
 
 ## Bash - Iterate Nos
