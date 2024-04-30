@@ -1122,11 +1122,11 @@ Perintah ini akan memuat ulang pengaturan .bashrc saat ini tanpa perlu masuk dan
 
 Cara lainnya adalah dengan menggunakan perintah `let` untuk menetapkan variabel berdasarkan hasil ekspresi kondisional.
 
-![App Screenshot](img/ternary1.jpg)
+![App Screenshot](img/ternary/ter2.png)
 
 Output : 
 
-![App Screenshot](img/ternary2.jpg)
+![App Screenshot](img/ternary/ter1.png)
 
 ## Bash - Lowercase
 
@@ -1137,19 +1137,19 @@ Ada beberapa cara untuk mencapai ini, tergantung pada jenis dan versi Bash.
 Menggunakan perintah tr
 Perintah tr, singkatan dari translator, adalah perintah Unix yang digunakan untuk mengonversi karakter dari satu format ke format lainnya.
 
-![App Screenshot](img/lower1.jpg)
+![App Screenshot](img/lower/lower1.png)
 
 Output : 
 
-![App Screenshot](img/lower2.jpg)
+![App Screenshot](img/lower/lower1.1.png)
 
 Alternatifnya : 
 
-![App Screenshot](img/lower3.jpg)
+![App Screenshot](img/lower/lower2.png)
 
 Output : 
 
-![App Screenshot](img/lower4.jpg)
+![App Screenshot](img/lower/lower2.1.png)
 
 ## Bash - Uppercase
 
@@ -1158,19 +1158,19 @@ Sebuah string huruf besar merujuk pada sebuah string yang mengandung semua huruf
 
 Misalnya, jika string inputnya adalah "Hello World Welcome", maka outputnya akan menjadi "HELLO WORLD WELCOME."
 
-![App Screenshot](img/upper1.jpg)
+![App Screenshot](img/upper/upperb.png)
 
 Output : 
 
-![App Screenshot](img/upper2.jpg)
+![App Screenshot](img/upper/upperb2.png)
 
 Untuk mengkonversi sebuah string menjadi huruf besar menggunakan perintah awk, fungsi toupper digabungkan dengan awk. Hasilnya kemudian diteruskan ke perintah echo menggunakan operator pipa:
 
-![App Screenshot](img/upper3.jpg)
+![App Screenshot](img/upper/upper1.png)
 
 Output : 
 
-![App Screenshot](img/upper4.jpg)
+![App Screenshot](img/upper/upper1.1.png)
 
 ## Bash - Substring
 
@@ -1183,11 +1183,11 @@ Ada beberapa cara untuk melakukan pemeriksaan ini.
 Gunakan pernyataan if untuk membandingkan string dengan substring yang diinginkan menggunakan operator kesetaraan (==) dan wildcard (*).
 Terakhir, cetak string jika substring ditemukan.
 
-![App Screenshot](img/subs1.jpg)
+![App Screenshot](img/string/stringb.png)
 
 Output : 
 
-![App Screenshot](img/subs2.jpg)
+![App Screenshot](img/string/stringb1.png)
 
 ##### Use Regular Expressions to Find a Substring
 
@@ -1204,12 +1204,13 @@ fi
 
 Perintah grep digunakan untuk mencari string yang ditentukan, dipipakan ke string utama untuk dibandingkan.
 
-![App Screenshot](img/subs3.jpg)
+![App Screenshot](img/string/string1.1.png)
 
 Output : 
-![App Screenshot](img/subs4.jpg)
 
-##### Bash - variable set
+![App Screenshot](img/string/string1.2.png)
+
+## Bash - variable set
 
 Dalam pemrograman skrip shell bash, Anda dapat melakukan pengecekan variabel untuk:
 
@@ -1275,22 +1276,25 @@ Kadang-kadang, kita ingin membuat nama file dengan nama yang berisi angka yang d
 
 Perintah seq digunakan untuk menghasilkan urutan angka.
 
-![App Screenshot](img/nos1.jpg)
+![App Screenshot](img/itel/itel1.png)
 
 Output : 
-![App Screenshot](img/nos2.jpg)
+
+![App Screenshot](img/itel/itel1.2.png)
 
 menggunakan perulangan for
 
-![App Screenshot](img/nos3.jpg)
+![App Screenshot](img/itel/itel2.png)
 
 Output : 
-![App Screenshot](img/nos4.jpg)
+
+![App Screenshot](img/itel/itel2.2.png)
 
 menggunakan perulangan while
 
 
-![App Screenshot](img/nos5.jpg)
+![App Screenshot](img/itel/itel3.png)
 
 Output : 
-![App Screenshot](img/nos6.jpg)
+
+![App Screenshot](img/itel/itel3.2.png)
