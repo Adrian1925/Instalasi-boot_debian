@@ -947,11 +947,17 @@ Berikut adalah operator perbandingan:
 - `-ge`: Lebih besar dari atau sama dengan
   - Memeriksa apakah variabel pertama lebih besar dari atau sama dengan variabel kedua
 
-![App Screenshot](img/comp1.jpg)
+Kode Gagal 
+![App Screenshot](img/numbers-coparasion/1.png)
 
-Output : 
+Kode Sukses 
+![App Screenshot](img/numbers-coparasion/2.png)
 
-![App Screenshot](img/comp2.jpg)
+Output Gagal 
+![App Screenshot](img/numbers-coparasion/3.png)
+
+Output Sukses
+![App Screenshot](img/numbers-coparasion/4.png)
 
 ## Bash - Check Directory
 
@@ -972,19 +978,20 @@ fi
 
 ##### How to mkdir only if a directory does not already exist?
 
-![App Screenshot](img/check1.jpg)
+![App Screenshot](img/check-directory/1.png)
 
 Output : 
 
-![App Screenshot](img/check2.jpg)
+![App Screenshot](img/check-directory/2.png)
+![App Screenshot](img/check-directory/3.png)
 
 Sebagai alternatif, ekspresi kondisional ternary digunakan sebagai pengganti ekspresi kondisional if.
 
-![App Screenshot](img/check3.jpg)
+![App Screenshot](img/check-directory/4.png)
 
 Output : 
 
-![App Screenshot](img/check4.jpg)
+![App Screenshot](img/check-directory/5.png)
 
 ## Bash - File Name
 
@@ -1008,11 +1015,11 @@ Sebagai contoh, pertimbangkan jalur /home/fahril/run.sh, hasil ekstensinya adala
 
 Awalnya, perintah basename digunakan untuk menghapus jalur direktori dan mengembalikan nama file untuk jalur yang ditentukan, dan nama file ini kemudian digunakan bersama dengan sintaks ekspresi untuk mengembalikan hanya ekstensinya.
 
-![App Screenshot](img/file-name/1.png)
+![App Screenshot](img/file-name/3.png)
 
 Output : 
 
-![App Screenshot](img/file-name/2.png)
+![App Screenshot](img/file-name/4.png)
 
 ## Bash - Split String
 
@@ -1025,31 +1032,31 @@ Perintah awk, sebuah utilitas Linux yang kompatibel dengan semua distribusi bash
 
 Inputnya diberikan menggunakan simbol pipa (|), dan contoh di bawah ini menunjukkan pembagian sebuah string yang berisi titik dua 
 
-![App Screenshot](img/file-name/3.png)
+![App Screenshot](img/split-string/1.png)
 
 Output : 
 
-![App Screenshot](img/file-name/4.png)
+![App Screenshot](img/split-string/2.png)
 
 ##### split using IFS variable
 
 Di sini, string input terdiri dari elemen-elemen yang dipisahkan oleh tanda hubung. Variabel shell IFS (Internal Field Separator) diatur menjadi tanda hubung, dan string tersebut diiterasi menggunakan loop for.
 
-![App Screenshot](img/file-name/5.pngg)
+![App Screenshot](img/split-string/3.png)
 
 Output : 
 
-![App Screenshot](img/file-name/6.png)
+![App Screenshot](img/split-string/4.png)
 
 ##### Use Parameter expansion and loop
 
 Ekspansi parameter digunakan untuk mengubah nilai variabel berdasarkan opsi yang ditentukan. Dalam kasus ini, sebuah variabel string dikonversi menjadi sebuah array. Array tersebut kemudian diiterasi menggunakan sintaks loop for, mencetak setiap elemen ke konsol.
 
-![App Screenshot](img/file-name/7.png)
+![App Screenshot](img/split-string/5.png)
 
 Output : 
 
-![App Screenshot](img/file-name/8.png)
+![App Screenshot](img/split-string/6.png)
 
 ## Bash - String Length
 
