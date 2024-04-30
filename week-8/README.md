@@ -1252,21 +1252,21 @@ Dalam contoh di atas, ganti `variable` dengan nama variabel yang ingin Anda peri
 contoh : 
 
 
-![App Screenshot](img/setvar1.jpg)
+![App Screenshot](img/variabelset/varset1.png)
 
 Output : 
-![App Screenshot](img/setvar2.jpg)
+![App Screenshot](img/variabelset/varset1.2.png)
 
 
-![App Screenshot](img/setvar3.jpg)
-
-Output : 
-![App Screenshot](img/setvar4.jpg)
-
-![App Screenshot](img/setvar5.jpg)
+![App Screenshot](img/variabelset/varset2.png)
 
 Output : 
-![App Screenshot](img/setvar6.jpg)
+![App Screenshot](img/variabelset/varset2.2.png)
+
+![App Screenshot](img/variabelset/varset3.png)
+
+Output : 
+![App Screenshot](img/variabelset/varset3.2.png)
 
 ## Bash - Iterate Nos
 
