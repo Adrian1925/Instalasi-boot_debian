@@ -633,22 +633,22 @@ Jika Anda ingin menghindari ekspansi variabel dalam string, Anda dapat menggunak
 
 Sebagai contoh, dalam perintah `echo` yang pertama, variabel "nama" akan diekspansi dan diinterpretasikan sebagai string sebelum dicetak. Namun, dalam perintah `echo` yang kedua, karakter escape (\) digunakan sebelum tanda dolar ($), sehingga variabel "nama" dicetak sebagai string literal.
 
-![App Screenshot](img/sc3.jpg)
+![App Screenshot](img/special/17-1.png)
 
 Output : 
 
-![App Screenshot](img/sc4.jpg)
+![App Screenshot](img/special/17-2.png)
 
 
 Karakter Backslash (\) digunakan untuk melarikan karakter-karakter dalam string. Biasanya, ini digunakan dalam string yang diapit oleh tanda kutip ganda (""). 
 
 Dalam contoh pertama, pada perintah `echo`,  akan menampilkan ID proses. Namun, dalam contoh kedua, perintah `echo` berisi \$, yang menyebabkan $$ ditampilkan sebagai string literal dengan karakter escape.
 
-![App Screenshot](img/sc5.jpg)
+![App Screenshot](img/special/18-1.png)
 
 Output : 
 
-![App Screenshot](img/sc6.jpg)
+![App Screenshot](img/special/18-2.png)
 
 ## Bash Shell Conditional Statements
 
@@ -656,19 +656,19 @@ Bash Script menyediakan ekspresi kondisional untuk menjalankan kode yang berbeda
 
 - If-Else Conditional Statements
 
-![App Screenshot](img/if1.jpg)
+![App Screenshot](img/conditional/23-1.png)
 
 Output : 
 
-![App Screenshot](img/if2.jpg)
+![App Screenshot](img/conditional/23-2.png)
 
 - If..Elif..Else Statements
 
-![App Screenshot](img/if3.jpg)
+![App Screenshot](img/conditional/24-1.png)
 
 Output : 
 
-![App Screenshot](img/if4.jpg)
+![App Screenshot](img/conditional/24-2.png)
 
 ## Bash - Loops
 
@@ -682,41 +682,41 @@ Loop digunakan untuk menjalankan blok kode untuk sejumlah kali tertentu. Misalny
 
 Loop for digunakan untuk menjalankan kode beberapa kali berdasarkan kondisi yang ditentukan.
 
-![App Screenshot](img/loop1.jpg)
+![App Screenshot](img/loop/19-1.png)
 
 Output : 
 
-![App Screenshot](img/loop2.jpg)
+![App Screenshot](img/loop/19-2.png)
 
 ##### for index loop
 
 Loop for indeks mirip dengan loop for dalam bahasa C. Ini menjalankan kode beberapa kali berdasarkan kondisi yang benar. Dimulai dengan nilai awal dan iterasi berisi nilai yang akan ditambahkan dengan 1.
 
-![App Screenshot](img/loop3.jpg)
+![App Screenshot](img/loop/20-1.png)
 
 Output : 
 
-![App Screenshot](img/loop4.jpg)
+![App Screenshot](img/loop/20-2.png)
 
 ##### while loop in bash
 
 Loop while dalam Bash memungkinkan untuk menjalankan kode secara berulang selama kondisi tertentu benar. Jika kondisinya menjadi salah, loop keluar.
 
-![App Screenshot](img/loop5.jpg)
+![App Screenshot](img/loop/21-1.png)
 
 Output : 
 
-![App Screenshot](img/loop6.jpg)
+![App Screenshot](img/loop/21-2.png)
 
 ##### Until loop in bash
 
 Kata kunci until dalam Bash digunakan untuk menjalankan kode secara berulang hingga suatu kondisi tertentu menjadi benar, pada saat itu loop keluar.
 
-![App Screenshot](img/loop7.jpg)
+![App Screenshot](img/loop/22-1.png)
 
 Output : 
 
-![App Screenshot](img/loop8.jpg)
+![App Screenshot](img/loop/21-2.png)
 
 ## Bash - Append String
 
